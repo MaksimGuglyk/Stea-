@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background-color:#9C1FE8
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.input-container {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+}
+button:not([type="submit"]) {
+    display: none;
+}</style>
+    
+   
+   
+    <title>Увійдіть в свій обліковий запис</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Ласкаво просимо!</h1>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Логін" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit"><a href="Mywebsite.html">Увійти</button>
+    </div>
+</body>
+</html>
